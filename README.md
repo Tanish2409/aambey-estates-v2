@@ -5,7 +5,8 @@ Production-grade Next.js marketing website for **Aambey Estates**, focused on No
 ## What is included
 
 - Next.js App Router with `src/` directory, strict TypeScript, ESLint, and Prettier.
-- Tailwind CSS with shadcn/ui-compatible primitives and a consistent emerald/gold/ivory brand theme.
+- Tailwind CSS with shadcn/ui-compatible primitives and a navy/gold/ivory theme based on the official Aambey Estates logo.
+- Logo, lockup, mark, favicon, app icon, and Open Graph SVG assets under `public/`.
 - Server Components by default with static generation for location and service SEO pages.
 - `sitemap.ts`, `robots.ts`, manifest, canonical metadata, Open Graph metadata, and JSON-LD.
 - SEO copy targeting new launch projects, resale flats, ready-to-move flats, investor exit deals, Noida Extension, Yamuna Expressway, and Noida NCR property consultant searches.
