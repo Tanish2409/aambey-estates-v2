@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AambeyLogo } from "@/components/brand/aambey-logo";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -6,10 +7,10 @@ import { faqs, locations, services, siteConfig } from "@/content/site";
 export function Hero() {
   return (
     <section className="bg-primary text-primary-foreground">
-      <div className="section grid min-h-[660px] gap-10 lg:grid-cols-2 lg:items-center">
+      <div className="section grid min-h-[680px] gap-10 lg:grid-cols-2 lg:items-center">
         <div className="space-y-7">
-          <Badge className="border-accent/40 bg-accent/20 text-accent">
-            Noida NCR Real Estate Advisory
+          <Badge className="border-accent/40 bg-accent/15 text-accent">
+            Finding Spaces. Creating Legacies.
           </Badge>
           <h1 className="h-xl text-primary-foreground">
             Buy property in Noida, Greater Noida & Ghaziabad with sharper local guidance.
@@ -27,11 +28,16 @@ export function Hero() {
             </Link>
           </div>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2">
-          <Stat value="3" label="Focus markets" />
-          <Stat value="RERA" label="Documentation-first" />
-          <Stat value="New + resale" label="Inventory coverage" />
-          <Stat value="SSG" label="SEO-first website" />
+        <div className="space-y-4">
+          <div className="rounded-[2rem] border border-primary-foreground/15 bg-primary-foreground p-6 shadow-soft sm:p-8">
+            <AambeyLogo className="mx-auto w-full max-w-[440px]" eager variant="full" />
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <Stat value="3" label="Focus markets" />
+            <Stat value="RERA" label="Documentation-first" />
+            <Stat value="New + resale" label="Inventory coverage" />
+            <Stat value="Navy + gold" label="Brand-led design" />
+          </div>
         </div>
       </div>
     </section>
@@ -107,7 +113,7 @@ export function Locations() {
 export function SeoMarket() {
   return (
     <section className="section">
-      <div className="rounded-[2rem] border bg-card p-8">
+      <div className="rounded-[2rem] border bg-card p-8 shadow-sm">
         <p className="eyebrow">SEO strategy</p>
         <h2 className="h-lg mt-3">Built around what ranking portals do well</h2>
         <p className="lead mt-4">
