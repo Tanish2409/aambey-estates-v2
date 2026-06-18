@@ -1,15 +1,13 @@
 import Link from "next/link";
-import { nav, siteConfig } from "@/content/site";
+import { AambeyLogo } from "@/components/brand/aambey-logo";
 import { buttonVariants } from "@/components/ui/button";
+import { nav, siteConfig } from "@/content/site";
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b bg-background/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur">
       <div className="container flex min-h-20 items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-3">
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary font-serif text-primary-foreground">
-            AE
-          </span>
-          <span className="font-serif text-xl font-semibold">Aambey Estates</span>
+        <Link aria-label="Aambey Estates home" className="flex items-center" href="/">
+          <AambeyLogo className="h-14 max-w-[220px] sm:max-w-[250px]" eager />
         </Link>
         <nav className="hidden gap-6 lg:flex" aria-label="Primary navigation">
           {nav.map((item) => (
@@ -22,7 +20,7 @@ export function SiteHeader() {
             </Link>
           ))}
         </nav>
-        <Link className={buttonVariants({ size: "sm" })} href={siteConfig.contact.whatsappHref}>
+        <Link className={buttonVariants({ variant: "gold", size: "sm" })} href={siteConfig.contact.whatsappHref}>
           WhatsApp
         </Link>
       </div>
