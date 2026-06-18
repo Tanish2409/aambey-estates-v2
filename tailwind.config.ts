@@ -27,7 +27,7 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      boxShadow: { soft: "0 24px 70px -38px rgba(7, 59, 47, 0.45)" },
+      boxShadow: { soft: "0 24px 70px -38px rgba(14, 37, 56, 0.45)" },
       fontFamily: { serif: ["Georgia", "Cambria", "Times New Roman", "serif"] },
     },
   },
