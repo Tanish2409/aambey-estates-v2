@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   ...(siteConfig.googleSiteVerification
     ? { verification: { google: siteConfig.googleSiteVerification } }
     : {}),
-  icons: { icon: "/icon.svg", apple: "/apple-icon.svg" },
+  icons: { icon: "/icon.svg", shortcut: "/favicon.svg", apple: "/apple-icon.svg" },
 };
-export const viewport: Viewport = { themeColor: "#073b2f", colorScheme: "light" };
+export const viewport: Viewport = { themeColor: "#0E2538", colorScheme: "light" };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-IN">
