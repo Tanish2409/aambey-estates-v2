@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     title: `${siteConfig.name} | Noida NCR Real Estate Advisory`,
     description: siteConfig.description,
     siteName: siteConfig.name,
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
   ...(siteConfig.googleSiteVerification
     ? { verification: { google: siteConfig.googleSiteVerification } }
     : {}),
-  icons: { icon: "/icon.svg", shortcut: "/favicon.svg", apple: "/apple-icon.svg" },
+  icons: { icon: "/icon.svg", shortcut: "/favicon.ico", apple: "/apple-icon.png" },
 };
 export const viewport: Viewport = { themeColor: "#0E2538", colorScheme: "light" };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
