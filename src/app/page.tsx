@@ -1,11 +1,9 @@
-import {
-  Contact,
-  FAQ,
-  Hero,
-  Locations,
-  SeoMarket,
-  Services,
-} from "@/components/sections/home-sections";
+import { Contact } from "@/components/sections/contact";
+import { FAQ } from "@/components/sections/faq";
+import { Hero } from "@/components/sections/hero";
+import { Locations } from "@/components/sections/locations";
+import { SeoMarket } from "@/components/sections/seo-market";
+import { Services } from "@/components/sections/services";
 import { JsonLd } from "@/components/seo/json-ld";
 import { faqJsonLd, organizationJsonLd } from "@/lib/seo";
 export const dynamic = "force-static";

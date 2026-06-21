@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Contact, FAQ } from "@/components/sections/home-sections";
+import { Contact } from "@/components/sections/contact";
+import { FAQ } from "@/components/sections/faq";
 import { JsonLd } from "@/components/seo/json-ld";
 import { buttonVariants } from "@/components/ui/button";
 import { services, siteConfig } from "@/content/site";
