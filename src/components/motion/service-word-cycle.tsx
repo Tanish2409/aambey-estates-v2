@@ -20,6 +20,15 @@ export function ServiceWordCycle() {
 
   return (
     <span className="inline-grid align-baseline text-accent" data-current-service={word}>
+      {serviceWords.map((serviceWord) => (
+        <span
+          aria-hidden="true"
+          className="invisible col-start-1 row-start-1 inline-block"
+          key={serviceWord}
+        >
+          {serviceWord}
+        </span>
+      ))}
       <motion.span
         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         className="col-start-1 row-start-1 inline-block will-change-transform"

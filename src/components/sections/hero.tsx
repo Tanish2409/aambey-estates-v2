@@ -17,13 +17,16 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-primary/55" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_34%,rgba(255,255,255,0.18),transparent_34rem)]" />
-      <div className="container relative flex min-h-[100dvh] items-end pb-16 pt-28 sm:pb-20 lg:pb-24">
+      <div className="container relative flex min-h-[100dvh] items-center pb-16 pt-28 sm:pb-20 lg:pb-24">
         <div className="max-w-5xl text-primary-foreground">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent">
+          <p className="inline-flex rounded-full border border-primary-foreground/25 bg-primary/70 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-primary-foreground shadow-soft backdrop-blur">
             Aambey Estates
           </p>
-          <h1 className="mt-6 max-w-5xl text-balance text-[clamp(2.85rem,7vw,6.8rem)] font-semibold leading-[0.92] tracking-tight">
-            Guided NCR property for <ServiceWordCycle />
+          <h1 className="mt-6 max-w-5xl text-[clamp(2.55rem,6.6vw,6.35rem)] font-semibold leading-[0.92] tracking-tight">
+            <span className="block">Guided NCR property</span>
+            <span className="block">
+              for <ServiceWordCycle />
+            </span>
           </h1>
           <p className="text-primary-foreground/84 mt-7 max-w-2xl text-lg leading-8">
             Compare Noida NCR location, paperwork, budget, and timing before site visits.

@@ -9,10 +9,10 @@ export function Locations() {
     <section className="section" id="locations">
       <p className="eyebrow">NCR focus</p>
       <h2 className="h-lg mt-4 max-w-4xl">Local guidance where the decision actually happens.</h2>
-      <div className="mt-12 grid gap-4 md:flex md:min-h-[520px]">
+      <div className="mt-12 grid gap-4 md:min-h-[520px] md:grid-cols-3">
         {locations.map((location, index) => (
           <Link
-            className="group relative min-h-[360px] overflow-hidden rounded-[2rem] bg-card p-7 text-primary-foreground transition-all duration-700 ease-out md:flex-1 md:hover:flex-[1.55]"
+            className="group relative min-h-[360px] overflow-hidden rounded-[2rem] bg-card p-7 text-primary-foreground transition duration-700 ease-out"
             href={`/locations/${location.slug}`}
             key={location.slug}
           >

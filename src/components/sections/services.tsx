@@ -15,7 +15,7 @@ export function Services() {
           problems, not the same listing card.
         </p>
       </div>
-      <div className="mt-12 grid grid-flow-dense gap-4 lg:auto-rows-[240px] lg:grid-cols-4">
+      <div className="mt-12 grid grid-flow-dense gap-4 lg:auto-rows-[280px] lg:grid-cols-4">
         {services.map((service, index) => (
           <Reveal
             className="group overflow-hidden rounded-[2rem] bg-card text-foreground lg:col-span-2"
@@ -26,14 +26,14 @@ export function Services() {
               className="grid h-full min-h-[260px] md:grid-cols-2"
               href={`/services/${service.slug}`}
             >
-              <div className="flex h-full flex-col justify-between p-7">
+              <div className="flex h-full flex-col p-7 pb-10">
                 <div>
                   <h3 className="text-2xl font-semibold tracking-tight">{service.title}</h3>
-                  <p className="mt-4 text-sm leading-7 text-muted-foreground">
+                  <p className="mt-4 text-sm leading-6 text-muted-foreground">
                     {service.description}
                   </p>
                 </div>
-                <span className="mt-8 font-semibold text-primary">View service</span>
+                <span className="mt-auto pt-8 font-semibold text-primary">View service</span>
               </div>
               <div className="relative min-h-[220px] overflow-hidden md:min-h-0">
                 <Image
