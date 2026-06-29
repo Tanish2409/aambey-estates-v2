@@ -7,7 +7,18 @@ const eslintConfig = [
   ...nextVitals,
   ...nextTypeScript,
   prettier,
-  globalIgnores([".next/**", "out/**", "build/**", "coverage/**", "next-env.d.ts"]),
+  globalIgnores([
+    ".next/**",
+    "out/**",
+    "build/**",
+    "coverage/**",
+    "next-env.d.ts",
+    "_bmad/**",
+    "_bmad_output/**",
+    ".agents/**",
+    ".codex/**",
+    ".impeccable/**",
+  ]),
 ];
 
 export default eslintConfig;

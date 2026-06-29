@@ -35,13 +35,11 @@ export default async function ServicePage({ params }: Props) {
           { name: s.title, url: `${siteConfig.url}/services/${s.slug}` },
         ])}
       />
-      <section className="bg-primary text-primary-foreground">
-        <div className="section">
+      <section className="section">
+        <div className="rounded-[2rem] bg-secondary/70 p-8 shadow-[0_32px_90px_-72px_hsl(var(--primary))] lg:p-14">
           <p className="eyebrow">Real estate service</p>
-          <h1 className="h-xl mt-4 text-primary-foreground">{s.title}</h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-primary-foreground/80">
-            {s.description}
-          </p>
+          <h1 className="h-xl mt-4">{s.title}</h1>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">{s.description}</p>
           <Link
             className={buttonVariants({ variant: "gold", size: "lg" }) + " mt-8"}
             href="/#contact"

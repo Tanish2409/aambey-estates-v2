@@ -36,14 +36,14 @@ export default async function LocationPage({ params }: Props) {
           { name: l.name, url: `${siteConfig.url}/locations/${l.slug}` },
         ])}
       />
-      <section className="bg-primary text-primary-foreground">
-        <div className="section">
+      <section className="section">
+        <div className="rounded-[2rem] bg-secondary/70 p-8 shadow-[0_32px_90px_-72px_hsl(var(--primary))] lg:p-14">
           <p className="eyebrow">Location advisory</p>
-          <h1 className="h-xl mt-4 text-primary-foreground">{l.name} property advisory</h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-primary-foreground/80">{l.meta}</p>
+          <h1 className="h-xl mt-4">{l.name} property advisory</h1>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-muted-foreground">{l.meta}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             {l.markets.map((m) => (
-              <Badge className="border-accent/40 bg-accent/20 text-accent" key={m}>
+              <Badge className="border-accent/35 bg-background/60 text-primary" key={m}>
                 {m}
               </Badge>
             ))}

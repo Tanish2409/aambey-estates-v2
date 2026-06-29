@@ -1,15 +1,12 @@
-const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || "https://www.aambeyestates.com").replace(
-  /\/$/,
-  "",
-);
-const phoneLabel = process.env.NEXT_PUBLIC_PHONE_LABEL || "+91 00000 00000";
-const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER || "+910000000000";
-const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "910000000000";
-const email = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@aambeyestates.com";
+import { env } from "@/env";
+
+const phoneNumber = env.NEXT_PUBLIC_PHONE_NUMBER;
+const whatsappNumber = env.NEXT_PUBLIC_WHATSAPP_NUMBER;
+const email = env.NEXT_PUBLIC_CONTACT_EMAIL;
 
 export const siteConfig = {
   name: "Aambey Estates",
-  url: siteUrl,
+  url: env.NEXT_PUBLIC_SITE_URL,
   description:
     "Aambey Estates helps buyers and investors compare new launch projects, resale flats, high-rise societies, builder inventory, and investor exit opportunities across Noida, Greater Noida, and Ghaziabad.",
   keywords: [
@@ -24,13 +21,13 @@ export const siteConfig = {
     "property consultant in Noida NCR",
   ],
   contact: {
-    phoneLabel,
+    phoneLabel: env.NEXT_PUBLIC_PHONE_LABEL,
     phoneHref: `tel:${phoneNumber}`,
     whatsappHref: `https://wa.me/${whatsappNumber}`,
     email,
     emailHref: `mailto:${email}`,
   },
-  googleSiteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  googleSiteVerification: env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
 } as const;
 export const nav = [
   { label: "Services", href: "/#services" },
@@ -41,14 +38,14 @@ export const nav = [
 export const services = [
   {
     slug: "new-launch-projects",
-    title: "New Launch Projects",
+    title: "New Launch",
     description:
       "Compare upcoming and under-construction projects with payment-plan, possession, builder, and RERA checks.",
     meta: "New launch projects in Noida NCR with documentation-first advisory.",
   },
   {
     slug: "resale-homes",
-    title: "Resale Homes",
+    title: "Resale",
     description:
       "Shortlist resale flats and ready-to-move societies with registry, dues, loan, and negotiation checks.",
     meta: "Resale flats and ready-to-move homes in Noida, Greater Noida, and Ghaziabad.",
@@ -59,6 +56,13 @@ export const services = [
     description:
       "Evaluate investor exit opportunities with transfer process, pricing, builder policy, and risk flags.",
     meta: "Investor exit property deals in Noida NCR with due-diligence guidance.",
+  },
+  {
+    slug: "builder-inventory",
+    title: "Builder Inventory",
+    description:
+      "Review builder-direct stock with payment schedules, possession status, allocation terms, and documentation checks.",
+    meta: "Builder inventory in Noida NCR with payment, possession, and documentation guidance.",
   },
 ] as const;
 export const locations = [

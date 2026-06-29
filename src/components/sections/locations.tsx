@@ -1,37 +1,48 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { locations } from "@/content/site";
+
+const imagePositions = ["object-left", "object-center", "object-right"] as const;
 
 export function Locations() {
   return (
-    <section className="border-y bg-card/60" id="locations">
-      <div className="section">
-        <p className="eyebrow">Locations</p>
-        <h2 className="h-lg mt-3">Static local pages for Noida NCR search intent</h2>
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
-          {locations.map((l) => (
-            <Card key={l.slug}>
-              <CardHeader>
-                <CardTitle>{l.name}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm leading-7 text-muted-foreground">{l.meta}</p>
-                <div className="mt-5 flex flex-wrap gap-2">
-                  {l.markets.slice(0, 4).map((m) => (
-                    <Badge key={m}>{m}</Badge>
-                  ))}
-                </div>
-                <Link
-                  className="mt-5 inline-block font-semibold text-primary"
-                  href={`/locations/${l.slug}`}
-                >
-                  Explore {l.name} →
-                </Link>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+    <section className="section" id="locations">
+      <p className="eyebrow">NCR focus</p>
+      <h2 className="h-lg mt-4 max-w-4xl">Local guidance where the decision actually happens.</h2>
+      <div className="mt-12 grid gap-4 md:flex md:min-h-[520px]">
+        {locations.map((location, index) => (
+          <Link
+            className="group relative min-h-[360px] overflow-hidden rounded-[2rem] bg-card p-7 text-primary-foreground transition-all duration-700 ease-out md:flex-1 md:hover:flex-[1.55]"
+            href={`/locations/${location.slug}`}
+            key={location.slug}
+          >
+            <Image
+              alt={`${location.name} residential property market`}
+              className={`image-filter absolute inset-0 h-full w-full object-cover opacity-55 transition duration-700 ease-out group-hover:scale-105 group-hover:opacity-70 ${imagePositions[index] ?? "object-center"}`}
+              fill
+              sizes="(min-width: 768px) 33vw, 100vw"
+              src="/images/aambey-residence-hero.jpg"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent" />
+            <div className="relative flex h-full flex-col justify-end">
+              <h3 className="text-3xl font-semibold tracking-tight">{location.name}</h3>
+              <p className="text-primary-foreground/76 mt-4 max-w-sm text-sm leading-7">
+                {location.meta}
+              </p>
+              <div className="mt-6 flex flex-wrap gap-2">
+                {location.markets.slice(0, 3).map((market) => (
+                  <span
+                    className="rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-3 py-1 text-xs font-medium text-primary-foreground"
+                    key={market}
+                  >
+                    {market}
+                  </span>
+                ))}
+              </div>
+              <span className="mt-7 font-semibold text-accent">View location</span>
+            </div>
+          </Link>
+        ))}
       </div>
     </section>
   );

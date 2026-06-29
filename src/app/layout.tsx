@@ -1,8 +1,16 @@
 import type { Metadata, Viewport } from "next";
+import { Geist } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { siteConfig } from "@/content/site";
+
+const geist = Geist({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-geist",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
@@ -27,11 +35,11 @@ export const metadata: Metadata = {
     : {}),
   icons: { icon: "/icon.svg", shortcut: "/favicon.ico", apple: "/apple-icon.png" },
 };
-export const viewport: Viewport = { themeColor: "#0E2538", colorScheme: "light" };
+export const viewport: Viewport = { themeColor: "#F2EFE8", colorScheme: "light" };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en-IN">
-      <body>
+      <body className={geist.variable}>
         <a className="skip-link" href="#main-content">
           Skip to main content
         </a>

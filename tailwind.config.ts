@@ -2,7 +2,6 @@ import type { Config } from "tailwindcss";
 import animate from "tailwindcss-animate";
 
 const config = {
-  darkMode: ["class"],
   content: ["./src/**/*.{ts,tsx,mdx}"],
   theme: {
     container: { center: true, padding: "1rem", screens: { "2xl": "1200px" } },
@@ -28,7 +27,7 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       boxShadow: { soft: "0 24px 70px -38px rgba(14, 37, 56, 0.45)" },
-      fontFamily: { serif: ["Georgia", "Cambria", "Times New Roman", "serif"] },
+      fontFamily: { sans: ["var(--font-geist)", "ui-sans-serif", "system-ui", "sans-serif"] },
     },
   },
   plugins: [animate],
