@@ -93,18 +93,49 @@ export const locations = [
 ] as const;
 export const faqs = [
   {
-    question: "Does Aambey Estates cover only Noida NCR?",
-    answer: "Yes. The current focus is Noida, Greater Noida, and Ghaziabad.",
+    question: "How do I choose the right property in Noida NCR?",
+    answer:
+      "Start with your purpose, budget, preferred location, property type, and timeline. Then compare builder record, RERA status, possession stage, total cost, daily travel, and resale or rental logic before booking a visit.",
   },
   {
-    question: "Do you handle resale as well as new launches?",
+    question: "Which areas does Aambey Estates cover?",
     answer:
-      "Yes. The advisory covers new launch projects, resale flats, builder inventory, high-rise societies, and investor exit opportunities.",
+      "The current focus is Noida, Noida Expressway, Greater Noida, Noida Extension, Ghaziabad, and nearby NCR residential markets.",
   },
   {
-    question: "Do you verify RERA and documents?",
+    question: "Should I buy a new launch or a ready-to-move flat?",
     answer:
-      "The process is documentation-first and encourages verification of RERA, approvals, dues, registry, transfer rules, and possession details before commitment.",
+      "New launch projects can suit buyers who want more unit choice or a longer payment plan. Ready-to-move and resale homes can suit buyers who want to see the actual society, check documents, and move faster.",
+  },
+  {
+    question: "Do you help with resale flats in Noida NCR?",
+    answer:
+      "Yes. Aambey Estates helps buyers compare resale flats and ready-to-move homes with checks around registry, dues, loan status, society condition, maintenance, and negotiation scope.",
+  },
+  {
+    question: "Do you handle new launch projects?",
+    answer:
+      "Yes. The advisory covers new launch and under-construction projects with guidance on builder record, RERA registration, payment plan, possession timeline, location fit, and site visits.",
+  },
+  {
+    question: "Do you help property investors?",
+    answer:
+      "Yes. For investors, the focus is on location demand, project category, entry price, transfer rules, rental or resale logic, and risk checks. Aambey Estates does not promise guaranteed returns.",
+  },
+  {
+    question: "Do you verify RERA, pricing, and documents?",
+    answer:
+      "The process is document-first and encourages verification of RERA, approvals, dues, registry, transfer rules, possession details, pricing, and availability before commitment.",
+  },
+  {
+    question: "Can you help plan site visits?",
+    answer:
+      "Yes. Share your budget, preferred area, purpose, and timeline. Aambey Estates can help create a cleaner shortlist so your site visits are focused and useful.",
+  },
+  {
+    question: "Do you quote live prices or availability online?",
+    answer:
+      "No. Prices and availability change often. The website gives guidance, but final price, inventory, payment plan, and legal or loan details should be confirmed by a human advisor.",
   },
 ] as const;
 export const authorityLinks = [

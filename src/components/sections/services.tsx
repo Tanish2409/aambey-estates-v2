@@ -9,10 +9,10 @@ export function Services() {
   return (
     <section className="section" id="services">
       <div className="max-w-3xl">
-        <h2 className="h-lg">Focused services for serious property decisions.</h2>
+        <h2 className="h-lg">Property guidance for serious buyers.</h2>
         <p className="lead mt-5">
-          New launch, resale, investor exits, and builder inventory are treated as different buying
-          problems, not the same listing card.
+          New launch, resale, investor exits, and builder inventory need different checks. We keep
+          the advice simple before you spend time on site visits.
         </p>
       </div>
       <div className="mt-12 grid grid-flow-dense gap-4 lg:auto-rows-[280px] lg:grid-cols-4">

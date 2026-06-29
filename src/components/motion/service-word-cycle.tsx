@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import { useEffect, useState } from "react";
 
-const serviceWords = ["new launch", "resale", "investor exit deals", "builder inventory"];
+const serviceWords = ["Noida", "Noida Expressway", "Greater Noida", "Ghaziabad"];
 
 export function ServiceWordCycle() {
   const [index, setIndex] = useState(0);

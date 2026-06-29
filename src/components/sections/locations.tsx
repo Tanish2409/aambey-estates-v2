@@ -8,7 +8,7 @@ export function Locations() {
   return (
     <section className="section" id="locations">
       <p className="eyebrow">NCR focus</p>
-      <h2 className="h-lg mt-4 max-w-4xl">Local guidance where the decision actually happens.</h2>
+      <h2 className="h-lg mt-4 max-w-4xl">Compare Noida NCR locations before you visit.</h2>
       <div className="mt-12 grid gap-4 md:min-h-[520px] md:grid-cols-3">
         {locations.map((location, index) => (
           <Link

@@ -7,10 +7,10 @@ export function Contact() {
     <section className="section" id="contact">
       <div className="grid gap-8 overflow-hidden rounded-[2rem] border border-border/70 bg-secondary/70 p-8 shadow-[0_32px_90px_-72px_hsl(var(--primary))] md:grid-cols-[1.15fr_0.85fr] md:items-center lg:p-14">
         <div>
-          <h2 className="h-lg max-w-3xl">Share the basics. Speak with a human advisor.</h2>
+          <h2 className="h-lg max-w-3xl">Share your budget. Get a cleaner shortlist.</h2>
           <p className="mt-5 max-w-2xl leading-8 text-muted-foreground">
             Send your budget, preferred location, timeline, and property goal. Aambey Estates will
-            help compare relevant NCR options before site visits.
+            help compare relevant Noida NCR options before site visits.
           </p>
         </div>
         <div className="flex flex-col gap-3 md:items-end">
@@ -18,7 +18,7 @@ export function Contact() {
             className={buttonVariants({ variant: "gold", size: "lg" })}
             href={siteConfig.contact.whatsappHref}
           >
-            Plan my search
+            Get my shortlist on WhatsApp
           </Link>
           <Link
             className={buttonVariants({ variant: "outline", size: "lg" })}

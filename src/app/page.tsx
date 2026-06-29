@@ -1,6 +1,7 @@
 import { Contact } from "@/components/sections/contact";
 import { FAQ } from "@/components/sections/faq";
 import { Hero } from "@/components/sections/hero";
+import { HomeAdvisory } from "@/components/sections/home-advisory";
 import { Locations } from "@/components/sections/locations";
 import { MarketStoryMotion } from "@/components/motion/market-story";
 import { SeoMarket } from "@/components/sections/seo-market";
@@ -13,6 +14,7 @@ export default function HomePage() {
     <>
       <JsonLd id="home-jsonld" data={[organizationJsonLd(), faqJsonLd()]} />
       <Hero />
+      <HomeAdvisory />
       <Services />
       <MarketStoryMotion />
       <Locations />

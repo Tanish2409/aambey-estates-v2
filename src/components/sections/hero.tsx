@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ServiceWordCycle } from "@/components/motion/service-word-cycle";
 import { buttonVariants } from "@/components/ui/button";
-import { siteConfig } from "@/content/site";
 
 export function Hero() {
   return (
@@ -23,23 +22,21 @@ export function Hero() {
             Aambey Estates
           </p>
           <h1 className="mt-6 max-w-5xl text-[clamp(2.55rem,6.6vw,6.35rem)] font-semibold leading-[0.92] tracking-tight">
-            <span className="block">Guided NCR property</span>
+            <span className="block">Find the right property</span>
             <span className="block">
-              for <ServiceWordCycle />
+              in <ServiceWordCycle />
             </span>
           </h1>
           <p className="text-primary-foreground/84 mt-7 max-w-2xl text-lg leading-8">
-            Compare Noida NCR location, paperwork, budget, and timing before site visits.
+            Aambey Estates helps serious buyers and investors compare Noida NCR homes with clear
+            advice on budget, location, builder, documents, and site visits.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link className={buttonVariants({ variant: "gold", size: "lg" })} href="#contact">
-              Plan my search
+              Get my shortlist on WhatsApp
             </Link>
-            <Link
-              className={buttonVariants({ variant: "inverse", size: "lg" })}
-              href={siteConfig.contact.phoneHref}
-            >
-              Call advisor
+            <Link className={buttonVariants({ variant: "inverse", size: "lg" })} href="#locations">
+              Compare locations
             </Link>
           </div>
         </div>
